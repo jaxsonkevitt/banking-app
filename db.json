@@ -1,0 +1,12 @@
+{
+  "transactions" : [{"date":"01/01/01","desc":"js books","type":"debit","amount":32.01},
+  {"date":"02/02/02","desc":"toys","type":"debit","amount":112},
+  {"date":"03/03/03","desc":"bar","type":"debit","amount":78},
+  {"date":"04/04/04","desc":"kitchenware","type":"debit","amount":232},
+  {"date":"05/05/05","desc":"candybar","type":"debit","amount":2},
+  {"date":"06/06/06","desc":"zelle","type":"credit","amount":432},
+  {"date":"07/07/07","desc":"sock shop","type":"credit","amount":22},
+  {"date":"08/08/08","desc":"pants shop","type":"credit","amount":72},
+  {"date":"09/09/09","desc":"cash app","type":"credit","amount":93},
+  {"date":"10/10/10","desc":"venmo","type":"credit","amount":100.1}]
+  }

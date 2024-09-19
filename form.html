@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>App Form</title>
+<link rel="stylesheet" type="text/css" href='css/style.css'>
+
+<script src="js/prequalify.js"></script>
+
+</head>
+
+<body onload="disp()">
+
+    <div class="container">
+        <div class="header">
+          <img src="img/tcbank.logo.png" alt="logo">
+         </div>
+        <div class="dashboard">
+            <h2>Application Form</h2>
+            <br>
+            <form onsubmit="return false;" class="application-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <span class="error" id="error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email2">Re-enter Email</label>
+                    <input type="email" name="email2" id="email2">
+                    <span class="error" id="error2"></span>
+                </div>
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname">
+                    <span class="error" id="error3"></span>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city">
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state">
+                </div>
+                <div class="form-group">
+                    <label for="zip">ZIP Code</label>
+                    <input type="text" id="zip">
+                </div>
+                <div class="form-group">
+                    <label for="gross">Gross Income</label>
+                    <input type="number" id="gross">
+                </div>
+                <div class="form-group">
+                    <label for="ssn">Last 4 digits of SSN</label>
+                    <input type="number" id="ssn">
+                </div>
+
+                <div class="prequalification-text">
+                    <p>
+                        This prequalification request serves as my written instruction to Titan Community Bank to obtain 
+                        a "soft inquiry" about my credit information, which won't affect my credit score. I agree 
+                        that TCB can send me an email confirming my request.
+                    </p>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">I Agree</label>
+                </div>
+
+                <div class="form-buttons">
+                    <input type="button" value="Apply" onclick="valid()">
+                    <input type="button" value="Reset" onclick="resetAll()">
+                </div>
+            </form>
+
+            <br>
+            <a href='index.html' class="qualify-button" onclick="window.location.href='index.html'; return false;">Go back home</a>
+        </div>
+
+        <br>
+
+        <!-- table creation -->
+
+        <table id="t1" border="1">
+
+        <tr>
+
+        <th>Required Fields</th> <th>User Input</th>
+
+        </tr>
+
+        <tr>
+
+        <td>Email</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>First name</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>Last name</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>City</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>State</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>Zip</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>Gross Income</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>Last 4 digit of SSN</td><td></td>
+
+        </tr>
+
+        <tr>
+
+        <td>Agree</td><td></td>
+
+        </tr>
+
+        </table>
+
+    </div>
+</div>
+
+</body>
+
+</html>

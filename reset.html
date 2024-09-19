@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Titan Community Bank</title>
+    <link rel="stylesheet" type="text/css" href='css/style.css'>
+  </head>
+  <body>
+    <script src="js/reset.js" async></script>
+    <body onload="psw_reset()">
+    <main>
+      <div class="container">
+        <div class="header">
+          <img src="img/tcbank.logo.png" alt="logo">
+         </div>
+        <div class="dashboard-login">
+          <h2>Reset Your Password</h2>
+          <br>
+          <form id="form1" onsubmit="return psw_reset();" action="login.html">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="text" id="email">
+            </div>
+            <div class="form-group">
+              <label for="psw">Password:</label>
+              <input type="password" id="psw">
+            </div>
+            <div class="form-group">
+              <label for="new_psw">New Password:</label>
+              <input type="password" id="new_psw">
+            </div>
+            <input type="submit" value="Reset Password">
+          </form>
+          <br>
+          <a href="index.html" class="reset-button">Back to home</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

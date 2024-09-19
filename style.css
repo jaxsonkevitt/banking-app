@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+
+}
+
+
+.container {
+    min-height: 100vh; /* Change from height to min-height */
+    width: 100%;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s  ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50% ;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0 50% ;
+    }
+}
+
+.header{
+    text-align: center;
+    background: transparent;
+    padding-top: 25px;
+    padding-bottom: 160px;
+}
+
+.dashboard {
+    margin-top: 200px;
+    padding-top:75px;
+    padding-bottom: 75px;
+    background: linear-gradient(rgba(84,3,255,0.35),rgba(105,2,153,0.35));
+    border-width: 20px;
+    border-color: black;
+    border-radius: 25px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+}
+
+.dashboard p{
+    padding: 25px;
+}
+
+
+
+.dashboard button{
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.dashboard login-and-sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Add space between the buttons */
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}
+
+
+.signup-button {
+    padding: 10px 40px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dashboard qualify {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+.qualify-button {
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.dashboard-login {
+    margin-top: 200px;
+    padding-top:75px;
+    padding-bottom: 75px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background: linear-gradient(rgba(84,3,255,0.35),rgba(105,2,153,0.35));
+    border-width: 20px;
+    border-color: black;
+    border-radius: 25px;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    color: white;
+    margin-bottom: 50px; /* Add some bottom margin */
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between; /* Space out label and input */
+    align-items: center;
+    margin-bottom: 15px; /* Space between fields */
+}
+
+
+.form-group label {
+    width: 100px; /* Set a fixed width to align inputs */
+    margin-right: 10px; /* Space between label and input */
+    font-weight: bold; /* Optional: make labels bold */
+}
+
+
+.form-group input {
+    width: calc(100% - 110px); /* Adjust width relative to label width */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+#form1 input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: auto; /* Change to auto to match content */
+    margin-top: 10px;
+}
+
+/* Hover effect for the submit button */
+#form1 input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.reset-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+/* Add this new rule to ensure both buttons have the same width */
+#form1 input[type="submit"],
+.reset-button {
+    min-width: 185px; /* Adjust this value as needed */
+    display: inline-block;
+}
+
+/* Center the "I agree" line */
+#form1 .form-group.agree {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#form1 .form-group.agree label {
+    width: auto;
+    margin: 0 5px;
+    font-weight: normal;
+}
+
+#form1 .form-group.agree input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+/* Reset the general form-group styles for the agree class */
+#form1 .form-group.agree {
+    justify-content: center;
+}
+
+/* Ensure the container covers the entire page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the "I agree" checkbox */
+.form-group.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.form-group.checkbox input[type="checkbox"] {
+    margin: 0;
+    width: auto;
+}
+
+.form-group.checkbox label {
+    margin-left: 5px;
+    width: auto;
+    font-weight: normal;
+}
+
+/* Override any conflicting styles */
+.form-group.checkbox {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        margin-top: 200px;
+        padding-top:75px;
+        padding-bottom: 75px;
+        background: linear-gradient(rgba(84,3,255,0.35),rgba(105,2,153,0.35));
+        border-width: 20px;
+        border-color: black;
+        border-radius: 25px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+    }
+
+    .dashboard-login {
+        margin-top: 200px;
+        padding-top:75px;
+        padding-bottom: 75px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background: linear-gradient(rgba(84,3,255,0.35),rgba(105,2,153,0.35));
+        border-width: 20px;
+        border-color: black;
+        border-radius: 25px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+        margin-bottom: 50px; /* Add some bottom margin */
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .dashboard-login {
+        margin-top: 200px;
+        padding-top:75px;
+        padding-bottom: 75px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background: linear-gradient(rgba(84,3,255,0.35),rgba(105,2,153,0.35));
+        border-width: 20px;
+        border-color: black;
+        border-radius: 25px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+        margin-bottom: 50px; /* Add some bottom margin */
+    }
+
+    .dashboard {
+        margin-top: 200px;
+        padding-top:75px;
+        padding-bottom: 75px;
+        background: linear-gradient(rgba(84,3,255,0.35),rgba(105,2,153,0.35));
+        border-width: 20px;
+        border-color: black;
+        border-radius: 25px;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        color: white;
+    }
+}

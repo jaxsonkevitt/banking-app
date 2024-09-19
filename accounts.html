@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href='css/style.css'>
+
+<title>Accounts</title>
+
+<style>
+
+h1, h2, h3 {
+    text-align: center;
+    color: white;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+}
+
+#container {
+    width: 100%;
+    padding: 20px;
+}
+
+#balance-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#balance {
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+</style>
+
+<script src="js/transactions.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <img src="img/tcbank.logo.png" alt="logo">
+        </div>
+        <div class="dashboard">
+            <div id="container">
+                <h1>Welcome to your account</h1>
+                <h2>Transactions</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Debit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Transaction rows will be added here dynamically -->
+                    </tbody>
+                </table>
+                <div id="balance-container">
+                    <h3>Balance: <span id="balance"></span></h3>
+                </div>
+                <div class="button-container">
+                    <button id="withdraw">Withdraw</button>
+                    <button id="deposit">Deposit</button>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 20px;">
+                <a href='index.html' class="qualify-button">Go back home</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
